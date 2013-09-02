@@ -18,7 +18,8 @@
 		05044B0217D4D57F00E0E3A4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05044B0117D4D57F00E0E3A4 /* Default-568h@2x.png */; };
 		05044B0517D4D57F00E0E3A4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05044B0317D4D57F00E0E3A4 /* MainStoryboard_iPhone.storyboard */; };
 		05044B0817D4D57F00E0E3A4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05044B0617D4D57F00E0E3A4 /* MainStoryboard_iPad.storyboard */; };
-		05044B0B17D4D57F00E0E3A4 /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05044B0A17D4D57F00E0E3A4 /* BGViewController.m */; };
+		05044B1C17D4D67700E0E3A4 /* BGSliderMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05044B1817D4D67700E0E3A4 /* BGSliderMenuView.m */; };
+		05044B1D17D4D67700E0E3A4 /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05044B1B17D4D67700E0E3A4 /* BGViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +38,10 @@
 		05044B0117D4D57F00E0E3A4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		05044B0417D4D57F00E0E3A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		05044B0717D4D57F00E0E3A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		05044B0917D4D57F00E0E3A4 /* BGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGViewController.h; sourceTree = "<group>"; };
-		05044B0A17D4D57F00E0E3A4 /* BGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGViewController.m; sourceTree = "<group>"; };
+		05044B1717D4D67700E0E3A4 /* BGSliderMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGSliderMenuView.h; sourceTree = "<group>"; };
+		05044B1817D4D67700E0E3A4 /* BGSliderMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGSliderMenuView.m; sourceTree = "<group>"; };
+		05044B1A17D4D67700E0E3A4 /* BGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGViewController.h; sourceTree = "<group>"; };
+		05044B1B17D4D67700E0E3A4 /* BGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +88,13 @@
 		05044AF117D4D57F00E0E3A4 /* SliderMenu */ = {
 			isa = PBXGroup;
 			children = (
+				05044B1517D4D67700E0E3A4 /* Model */,
+				05044B1617D4D67700E0E3A4 /* View */,
+				05044B1917D4D67700E0E3A4 /* ViewControllers */,
 				05044AFA17D4D57F00E0E3A4 /* BGAppDelegate.h */,
 				05044AFB17D4D57F00E0E3A4 /* BGAppDelegate.m */,
 				05044B0317D4D57F00E0E3A4 /* MainStoryboard_iPhone.storyboard */,
 				05044B0617D4D57F00E0E3A4 /* MainStoryboard_iPad.storyboard */,
-				05044B0917D4D57F00E0E3A4 /* BGViewController.h */,
-				05044B0A17D4D57F00E0E3A4 /* BGViewController.m */,
 				05044AF217D4D57F00E0E3A4 /* Supporting Files */,
 			);
 			path = SliderMenu;
@@ -108,6 +112,31 @@
 				05044B0117D4D57F00E0E3A4 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05044B1517D4D67700E0E3A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05044B1617D4D67700E0E3A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05044B1717D4D67700E0E3A4 /* BGSliderMenuView.h */,
+				05044B1817D4D67700E0E3A4 /* BGSliderMenuView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05044B1917D4D67700E0E3A4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				05044B1A17D4D67700E0E3A4 /* BGViewController.h */,
+				05044B1B17D4D67700E0E3A4 /* BGViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +209,8 @@
 			files = (
 				05044AF817D4D57F00E0E3A4 /* main.m in Sources */,
 				05044AFC17D4D57F00E0E3A4 /* BGAppDelegate.m in Sources */,
-				05044B0B17D4D57F00E0E3A4 /* BGViewController.m in Sources */,
+				05044B1C17D4D67700E0E3A4 /* BGSliderMenuView.m in Sources */,
+				05044B1D17D4D67700E0E3A4 /* BGViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +308,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SliderMenu/SliderMenu-Prefix.pch";
 				INFOPLIST_FILE = "SliderMenu/SliderMenu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -289,6 +320,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SliderMenu/SliderMenu-Prefix.pch";
 				INFOPLIST_FILE = "SliderMenu/SliderMenu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

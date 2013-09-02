@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BGSliderMenuView.h"
 
-@interface BGViewController : UIViewController
+@interface BGViewController : UIViewController <BGSliderMenuViewDelegate>
 
 @end
